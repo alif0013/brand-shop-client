@@ -7,7 +7,7 @@ import Category from './Category';
 const Home = () => {
 
     const categories = useLoaderData()
-console.log(categories);
+// console.log(categories);
 
     return (
         <div>
