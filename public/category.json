@@ -1,0 +1,33 @@
+[
+    {
+      "id": "1",
+      "brandName": "apple",
+      "brandImage": "https://i.ibb.co/pK7BfpY/62dec0259f18b71442a15966-Apple-Logo.png"
+    },
+    {
+      "id": "2",
+      "brandName": "samsung",
+      "brandImage": "https://i.ibb.co/h99C9nS/01-Zfold5-Configurator-800x600.jpg"
+    },
+    {
+      "id": "3",
+      "brandName": "sony",
+      "brandImage": "https://i.ibb.co/9V5n05L/sony-teases-new-alpha-camera.jpg"
+    },
+    {
+      "id": "4",
+      "brandName": "google",
+      "brandImage": "https://i.ibb.co/WfQvYFQ/63e40aea27e5db0018eecf76-width-700.png"
+    },
+    {
+      "id": "5",
+      "brandName": "intel",
+      "brandImage": "https://i.ibb.co/QJ1bCcD/Intel-Core.png"
+    },
+    {
+      "id": "6",
+      "brandName": "lenevo",
+      "brandImage": "https://i.ibb.co/mt5Tg2q/Is-Lenovo-a-Good-Laptop-Brand-Twitter-1200x675.jpg"
+    }
+  ]
+  

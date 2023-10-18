@@ -1,8 +1,14 @@
 import React from 'react';
 import HomeBanner from './HomeBanner';
 import WeLike from './WeLike';
+import { useLoaderData } from 'react-router-dom';
+import Category from './Category';
 
 const Home = () => {
+
+    const categories = useLoaderData()
+console.log(categories);
+
     return (
         <div>
             <HomeBanner></HomeBanner>
@@ -35,7 +41,18 @@ const Home = () => {
                 </div>
 
             </div>
+            
+            {/* brand section */}
+            <div className='mt-20'>
+                <h1 className='text-2xl md:text-4xl font-bold mb-10 text-center'>Our Latest Brand</h1>
 
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+                   {
+                    categories.map(brand => <Category key={brand.id} brand={brand}></Category>)
+                   }
+                </div>
+            
+            </div>
 
 
             <div>
