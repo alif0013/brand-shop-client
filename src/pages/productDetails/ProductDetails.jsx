@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 import { Link, useLoaderData } from 'react-router-dom';
 
 const ProductDetails = () => {
@@ -7,6 +8,27 @@ const ProductDetails = () => {
     const products = useLoaderData()
 
     const { _id, name, brand, type, price, rating, description, photo } = products;
+
+    const handleAddToCart = () =>{
+            // send data to the server
+            fetch('http://localhost:5000/carts',{
+                method: 'POST',
+                headers:{
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(products)
+    
+               })
+               .then(res => res.json())
+               .then(data =>{
+                console.log(data);
+                if(data.insertedId){
+                    toast.success('Product added Successfully!')
+                }
+               })
+    
+
+    }
 
     return (
         <div className='mt-16 md:w-[500px] mx-auto border shadow-md'>
@@ -28,7 +50,7 @@ const ProductDetails = () => {
                     <div className="card-actions justify-center">
                         {/* <Link to={`/myCart/${_id}`}> <button className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Add to Cart</button></Link> */}
 
-                        <button className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Add to Cart</button>
+                        <button onClick={handleAddToCart} className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Add to Cart</button>
 
                     </div>
                 </div>

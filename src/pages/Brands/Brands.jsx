@@ -6,7 +6,7 @@ import BrandCard from './BrandCard';
 const Brands = () => {
 
     const brands = useLoaderData()
-    console.log(brands);
+    // console.log(brands);
 
 
     return (
