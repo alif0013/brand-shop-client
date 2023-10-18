@@ -26,7 +26,7 @@ const BrandCard = ({brands}) => {
                     </div>
                     <div className="card-actions justify-center">
                        <Link to={`/details/${_id}`}> <button className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Details</button></Link>
-                        <button className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Update</button>
+                        <Link to={`/update/${_id}`}><button className="px-8 mt-5 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Update</button></Link>
                     </div>
                 </div>
             </div>
