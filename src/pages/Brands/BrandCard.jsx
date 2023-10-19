@@ -5,10 +5,7 @@ const BrandCard = ({brands}) => {
 
     const {_id, name, brand, type, price, rating, description, photo} = brands;
 
-    // handle details
-    // const handleDetails = (_id) =>{
-    //     console.log(_id)
-    // }
+    
 
     return (
         <div>
