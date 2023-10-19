@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import CartsCard from './CartsCard';
 import Swal from 'sweetalert2';
 
 const MyCart = () => {

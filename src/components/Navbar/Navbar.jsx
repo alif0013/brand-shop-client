@@ -1,21 +1,21 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-// import { AuthContext } from '../../Provider/AuthProvider';
-// import toast from 'react-hot-toast';
+import toast from 'react-hot-toast';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Navbar = () => {
 
-    // const { user, logOut } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
 
-    // const handleLogOut = () => {
-    //     logOut()
-    //         .then(() => {
-    //             toast.success('you logged Out successfully');
-    //         })
-    //         .catch(err => {
-    //             toast.error(err.message)
-    //         })
-    // }
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                toast.success('you logged Out successfully');
+            })
+            .catch(err => {
+                toast.error(err.message)
+            })
+    }
 
     // console.log('User:', user);
 
@@ -59,8 +59,8 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
 
-                <Link to='/login' className="px-10 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Login</Link>
-                {/* {
+                {/* <Link to='/login' className="px-10 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Login</Link> */}
+                {
                     user ? <>
 
                         <div>
@@ -72,11 +72,11 @@ const Navbar = () => {
                         </div>
 
                         <span className='hidden md:mr-5 md:block'>{user.displayName}</span>
-                        <Link to='/' onClick={handleLogOut} className="px-10 py-2 rounded bg-[#EC272E] text-white lg:text-lg font-semibold hover:bg-[#08A9E6]">LogOut</Link>
+                        <Link to='/' onClick={handleLogOut} className="px-10 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">LogOut</Link>
                     </>
                         :
-                        <Link to='/login' className="px-10 py-2 rounded bg-[#EC272E] text-white lg:text-lg font-semibold hover:bg-[#08A9E6]">Login</Link>
-                } */}
+                        <Link to='/login' className="px-10 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Login</Link>
+                }
 
             </div>
         </div>
