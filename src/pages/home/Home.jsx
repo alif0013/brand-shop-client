@@ -20,7 +20,7 @@ const Home = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-5 text-center justify-center'>
                     <div className='text-center'>
-                        <img className='ml-40 lg:ml-36 pb-4' src="https://i.ibb.co/Pht2zB3/ic12.png" alt="" />
+                        <img className='mx-auto pb-4' src="https://i.ibb.co/Pht2zB3/ic12.png" alt="" />
                         <h3>PERFECT CUT</h3>
                         <h1>Dual Camera</h1>
                         <p>Tristique senectus et netus <br /> et malesuada ant reiet fames.</p>

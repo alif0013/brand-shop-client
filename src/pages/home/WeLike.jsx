@@ -6,7 +6,7 @@ const WeLike = () => {
         <div>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row gap-20">
-                    <img src="https://i.ibb.co/q9Z5G0k/project-start1.png" className="max-w-md rounded-lg" />
+                    <img src="https://i.ibb.co/q9Z5G0k/project-start1.png" className="md:max-w-md rounded-lg" />
                     <div className="bg-[url('https://i.ibb.co/ZgZ6pf7/vector-shape3.png')]">
                         <h1 className="text-5xl font-bold">We Like to Start Your Project With Us</h1>
                         <p className="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>

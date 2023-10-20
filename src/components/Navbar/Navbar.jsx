@@ -82,6 +82,7 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 lg:text-lg font-semibold">
                     {navLinks}
+
                 </ul>
             </div>
 
@@ -104,6 +105,7 @@ const Navbar = () => {
 
                 </label>
             </div>
+            
             <div className="navbar-end">
 
                 {/* <Link to='/login' className="px-10 py-2 rounded bg-gradient-to-r from-[#4A00E0] to-blue-500 text-white lg:text-lg font-semibold">Login</Link> */}
