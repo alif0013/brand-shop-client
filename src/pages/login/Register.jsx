@@ -26,14 +26,14 @@ const Register = () => {
 
         }
 
-        // else if (!/[A-Z]/.test(password)) {
-        //     toast.error('Your password should have at least one upper case characters.')
-        //     return;
-        // }
-        // else if (!/[^A-Za-z0-9]/.test(password)) {
-        //     toast.error('Your password should have at least one special character.');
-        //     return;
-        // }
+        else if (!/[A-Z]/.test(password)) {
+            toast.error('Your password should have at least one upper case characters.')
+            return;
+        }
+        else if (!/[^A-Za-z0-9]/.test(password)) {
+            toast.error('Your password should have at least one special character.');
+            return;
+        }
         
 
         // Creat user by passing email and password

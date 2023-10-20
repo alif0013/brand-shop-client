@@ -49,7 +49,7 @@ const MyCart = () => {
                 <h1 className='text-2xl font-bold text-center md:text-4xl py-20'>Your Favourite Products</h1>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-20'>
                 {
                     //  carts.map(cart => <CartsCard key={cart._id} loaddedCarts={cart}></CartsCard>)
                     carts.map(cart => <>
