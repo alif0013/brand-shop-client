@@ -7,7 +7,7 @@ const Brands = () => {
 
     const brands = useLoaderData()
     // console.log(brands);
-
+ 
 
     return (
         <div>

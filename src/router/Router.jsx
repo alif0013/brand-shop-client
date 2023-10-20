@@ -22,6 +22,8 @@ const myCreatedRoutes = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: () => fetch('category.json')
+                
+
             },
             {
                 path: '/addProduct',
@@ -44,6 +46,7 @@ const myCreatedRoutes = createBrowserRouter([
                 path: '/brand',
                 element: <Brands></Brands>,
                 loader: ()=> fetch('http://localhost:5000/products')
+                
 
             },
             {

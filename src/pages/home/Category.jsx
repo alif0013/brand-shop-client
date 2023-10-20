@@ -5,6 +5,7 @@ const Category = ({ brand }) => {
     const { id, brandName, brandImage } = brand;
     return (
         <div>
+            {/* to='/brand' */}
             <Link to='/brand'>
                 <div className="card ">
                     <figure><img className='w-[350px]' src={brandImage} alt="img" /></figure>

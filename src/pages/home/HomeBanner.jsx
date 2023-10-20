@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HomeBanner = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-[url('https://i.ibb.co/wKRk0jw/banner-bg2.jpg')]">
+            <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src="https://i.ibb.co/MSgWsVL/banner-one-main-img.png" className="max-w-md rounded-lg" />
                     <div>

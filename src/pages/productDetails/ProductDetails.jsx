@@ -31,7 +31,7 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className='mt-16 md:w-[500px] mx-auto border shadow-md'>
+        <div className='mt-16 md:w-[500px] mx-auto border shadow-md mb-20'>
             <div className="card bg-base-100">
                 <figure><img className='h-[180px]' src={photo} alt="img" /></figure>
                 <div className="card-body">
