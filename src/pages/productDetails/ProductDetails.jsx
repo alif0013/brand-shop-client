@@ -11,7 +11,7 @@ const ProductDetails = () => {
 
     const handleAddToCart = () =>{
             // send data to the server
-            fetch('https://brand-shop-server-ravd25tj8-alif0013s-projects.vercel.app/carts',{
+            fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/carts',{
                 method: 'POST',
                 headers:{
                     'content-type': 'application/json'

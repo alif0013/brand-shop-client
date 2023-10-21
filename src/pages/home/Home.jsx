@@ -26,13 +26,13 @@ const Home = () => {
                         <p>Tristique senectus et netus <br /> et malesuada ant reiet fames.</p>
                     </div>
                     <div>
-                        <img className='ml-40 lg:ml-36 pb-4' src="https://i.ibb.co/sFgNPqk/ic13.png" alt="" />
+                        <img className='mx-auto lg:ml-36 pb-4' src="https://i.ibb.co/sFgNPqk/ic13.png" alt="" />
                         <h3>PERFECT CUT</h3>
                         <h1>Dual Camera</h1>
                         <p>Tristique senectus et netus <br /> et malesuada ant reiet fames.</p>
                     </div>
                     <div>
-                        <img className='ml-40 lg:ml-36 pb-4' src="https://i.ibb.co/PYk6GV7/ic11.png" alt="" />
+                        <img className='mx-auto lg:ml-36 pb-4' src="https://i.ibb.co/PYk6GV7/ic11.png" alt="" />
                         <h3>PERFECT CUT</h3>
                         <h1>Dual Camera</h1>
                         <p>Tristique senectus et netus <br /> et malesuada ant reiet fames.</p>
