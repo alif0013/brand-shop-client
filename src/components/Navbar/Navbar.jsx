@@ -60,6 +60,10 @@ const Navbar = () => {
             isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
         }>My Cart</NavLink></li>
 
+        <li><NavLink to='/feedback' className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "underline text-[#EC272E]" : ""
+        }>FeedBack</NavLink></li>
+
 
     </>
 

@@ -11,6 +11,7 @@ import Brands from '../pages/Brands/Brands';
 import ProductDetails from '../pages/productDetails/ProductDetails';
 import UpdateProduct from '../pages/updateProduct/UpdateProduct';
 import PrivateRoute from './PrivateRoute';
+import Feedback from '../pages/Feedback/Feedback';
 
 const myCreatedRoutes = createBrowserRouter([
     {
@@ -46,6 +47,13 @@ const myCreatedRoutes = createBrowserRouter([
                 path: '/brand',
                 element: <Brands></Brands>,
                 loader: ()=> fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/products')
+                
+
+            },
+            {
+                path: '/feedback',
+                element: <Feedback></Feedback>,
+                loader: ()=> fetch('http://localhost:5000/comment')
                 
 
             },

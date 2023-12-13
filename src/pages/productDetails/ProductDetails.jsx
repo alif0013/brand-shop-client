@@ -45,7 +45,7 @@ const ProductDetails = () => {
         const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
         const date = new Date().toLocaleDateString('en-US', options);
 
-        const newComment = { comment, commenterImg, userName, currentTime, date };
+        const newComment = { comment, commenterImg, userName, currentTime, date,type, price, photo, name };
 
         // console.log(newComment);
 
@@ -119,11 +119,7 @@ const ProductDetails = () => {
             </div>
         </div>
 
-        <div>
-            <h1 className='text-4xl'>Comment of this Post</h1>
-
-
-        </div>
+      
         </div>
     );
 };
