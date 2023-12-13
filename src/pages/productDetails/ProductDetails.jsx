@@ -10,6 +10,7 @@ const ProductDetails = () => {
 
     const { _id, name, brand, type, price, rating, description, photo } = products;
 
+
     const handleAddToCart = () => {
         // send data to the server
         fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/carts', {

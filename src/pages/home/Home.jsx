@@ -3,6 +3,7 @@ import HomeBanner from './HomeBanner';
 import WeLike from './WeLike';
 import { useLoaderData } from 'react-router-dom';
 import Category from './Category';
+import Slider from './Slider/Slider';
 
 const Home = () => {
 
@@ -53,6 +54,11 @@ const Home = () => {
                 </div>
             
             </div>
+
+                {/* slider */}
+                <div>
+                    <Slider></Slider>
+                </div>
 
 
             <div>
