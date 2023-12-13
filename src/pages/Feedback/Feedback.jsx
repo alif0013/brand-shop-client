@@ -28,7 +28,7 @@ const Feedback = () => {
         // console.log(newComment);
 
         // send data to the server
-        fetch('http://localhost:5000/Report', {
+        fetch('https://brand-shop-server-nine-tau.vercel.app/Report', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

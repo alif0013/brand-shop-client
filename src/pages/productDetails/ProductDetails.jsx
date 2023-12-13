@@ -13,7 +13,7 @@ const ProductDetails = () => {
 
     const handleAddToCart = () => {
         // send data to the server
-        fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/carts', {
+        fetch('https://brand-shop-server-nine-tau.vercel.app/carts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -50,7 +50,7 @@ const ProductDetails = () => {
         // console.log(newComment);
 
         // send data to the server
-        fetch('http://localhost:5000/comment', {
+        fetch('https://brand-shop-server-nine-tau.vercel.app/comment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

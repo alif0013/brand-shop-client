@@ -20,7 +20,7 @@ const MyCart = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/carts/${id}`, {
+                fetch(`https://brand-shop-server-nine-tau.vercel.app/carts/${id}`, {
                     method: "DELETE"
                 })
                     .then(res => res.json())

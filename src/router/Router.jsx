@@ -33,7 +33,7 @@ const myCreatedRoutes = createBrowserRouter([
             {
                 path: '/myCart',
                 element: <PrivateRoute> <MyCart></MyCart> </PrivateRoute> ,
-                loader: () => fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/carts')
+                loader: () => fetch('https://brand-shop-server-nine-tau.vercel.app/carts')
             },
             {
                 path: '/login',
@@ -46,26 +46,26 @@ const myCreatedRoutes = createBrowserRouter([
             {
                 path: '/brand',
                 element: <Brands></Brands>,
-                loader: ()=> fetch('https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/products')
+                loader: ()=> fetch('https://brand-shop-server-nine-tau.vercel.app/products')
                 
 
             },
             {
                 path: '/feedback',
                 element: <Feedback></Feedback>,
-                loader: ()=> fetch('http://localhost:5000/comment')
+                loader: ()=> fetch('https://brand-shop-server-nine-tau.vercel.app/comment')
                 
 
             },
             {
                 path: '/details/:id',
                 element: <PrivateRoute> <ProductDetails></ProductDetails> </PrivateRoute> ,
-                loader: ({params}) => fetch(`https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/products/${params.id}`)
+                loader: ({params}) => fetch(`https://brand-shop-server-nine-tau.vercel.app/products/${params.id}`)
             },
             {
                 path: '/update/:id',
                 element: <PrivateRoute> <UpdateProduct></UpdateProduct> </PrivateRoute> ,
-                loader: ({params}) => fetch(`https://brand-shop-server-oxcuuqsbx-alif0013s-projects.vercel.app/products/${params.id}`)
+                loader: ({params}) => fetch(`https://brand-shop-server-nine-tau.vercel.app/products/${params.id}`)
 
             }
         ]
